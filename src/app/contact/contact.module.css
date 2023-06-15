@@ -1,0 +1,47 @@
+.container {}
+.content {
+    display: flex;
+    gap: 100px;
+}
+.title {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+.imgContainer, .form {
+    flex:1
+}
+.imgContainer {
+    position: relative;
+    height: 500px;
+    animation: blinking infinite 3s ease-in-out alternate;
+}
+.image {
+    object-fit: contain;
+}
+@keyframes blinking {
+    from{
+      transform: scale(1) translateY(-15px);
+    }
+  
+    to {
+      transform: scale(1.1) translateY(0);
+    }
+  
+    
+  }
+.form {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.form input, .form textarea {
+    background: transparent;
+    padding: 20px;
+    color: #bbb;
+    outline: none;
+    border: 1px solid #bbb;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 3px;
+}

@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #194c33, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.link {}
+
+.logout {
+    border: none;
+    color: white;
+    background: #53c28b;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
