@@ -21,6 +21,7 @@
     height: 400px;
     position: relative;
     background-size: cover !important;
+    color: #bbb;
   }
   .item img {
     object-fit: cover;

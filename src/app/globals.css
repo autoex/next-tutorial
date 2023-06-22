@@ -5,6 +5,14 @@
   text-decoration: none;
 }
 
+:root {
+  --dark-theme-color: #bbb;
+  --dark-theme-bgColor: #111;
+  
+  --light-theme-color: #111;
+  --light-theme-bgColor: #fefefe;
+}
+
 html,
 body {
   max-width: 100vw;
@@ -33,11 +41,11 @@ header, footer {
   transition: all 1s ease;
 }
 .dark {
-  color: #bbb;
-  background: #111;
+  color: var(--dark-theme-color);
+  background: var(--dark-theme-bgColor);
 }
 
 .light {
-  color: #111;
-  background: #fff
+  color: var(--light-theme-color);
+  background: var(--light-theme-bgColor)
 }
