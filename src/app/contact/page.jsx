@@ -3,6 +3,13 @@ import styles from './contact.module.css'
 import Button from '../../components/button/Button'
 import Image from 'next/image'
 
+
+export const metadata = {
+  title: 'Contact page | NextJs App',
+  description: 'Contact information'
+};
+
+
 const Contact = () => {
   return (
     <div className={styles.container}>

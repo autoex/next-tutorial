@@ -3,6 +3,8 @@ import React from 'react';
 import styles from './page.module.css';
 import { notFound } from 'next/navigation';
 
+
+
 async function getData(id) {
   const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
     cache: 'no-store',
@@ -19,9 +21,17 @@ async function getData(id) {
   return res.json();
 }
 
+export async function generateMetadata({ params }) {
+  const post = await getData(params.id)
+  return {
+    title: post.title,
+    description: post.description
+  }
+}
+
 const BlogPost = async ({ params }) => {
   const data = await getData(params.id);
-  console.log(data);
+  console.log(params);
   return (
     <div className={styles.container}>
       <div className={styles.top}>
