@@ -13,9 +13,9 @@ const portfolioWorks = [
   { id: 2, url: '/portfolio/websites', img: '/websites.jpg', desc: 'Websites' },
   {
     id: 3,
-    url: '/portfolio/application',
+    url: '/portfolio/applications',
     img: '/apps.jpg',
-    desc: 'Application',
+    desc: 'Applications',
   },
 ];
 
